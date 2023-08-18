@@ -1,0 +1,17 @@
+﻿@using Microsoft.Extensions.Options;
+@inject IOptions<Core.Data.Models.CommonViewModel.ApplicationInfo> _ApplicationInfo;
+
+
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+
+<footer class="main-footer no-print">
+    <strong>Copyright &copy; 2021-2022 <a href="@_ApplicationInfo.Value.CopyrightURL">@_ApplicationInfo.Value.Copyright</a>.</strong>
+    All rights reserved. Contact: jaswant9300@gmail.com
+    <div class="float-right d-none d-sm-inline-block">
+        @_ApplicationInfo.Value.Version
+    </div>
+</footer>
+
+
